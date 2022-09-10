@@ -10,7 +10,8 @@ public class Main {
         } catch (Exception error) {
             System.out.println("Error");
         }
-
-        file.delete();
+        if (file.exists()) {
+            file.delete();
+        }
     }
 }
